@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omer GRoup</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-6/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+
+    <section class="subheader">
+        <nav>
+            <label class="logo">OmerGroup</label>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <!-- <h1>About Us</h1> -->
+    </section>
+
+    <!-- ---- about us content.... -->
+     <section class="about us">
+        <div class="row">
+            <div class="about-col">
+                
+                <h5><u><center>ABOUT US</center></u></h5>
+                <br>
+                <br>
+                <h1>We specialize in Event Contorl and agency services</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam illo consectetur eaque, magni, praesentium, doloremque temporibus at vi</p>
+                <!-- <a href="" class="hero-btn red-btn"><u>EXPLORE NOW</u></a> -->
+            </div>
+            <div class="about-col">
+                <img src="image/team.jpg">
+
+            </div>
+        </div>
+        <a href="service.html" class="hero-btn red-btn"><u>EXPLORE NOW</u></a>
+     </section>
+     <br>
+     <br>
+     <br>
+
+     <!-- ....part 2.....
+
+     <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <!-- <h1><center>ABOUT US</center></h1> -->
+                <!-- <h1>We specialize in Event Contorl and agency services</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Aliquam illo consectetur eaque, magni, praesentium, doloremque temporibus at vi</p>
+                <a href="" class="hero-btn red-btn"><u>EXPLORE NOW</u></a>
+            </div>
+            <div class="about-col">
+                <img src="image/team.jpg">
+            </div>
+            
+        </div>
+     </section> -->
+
+     <!-- ...part 3 about... -->
+      <!-- <section class="about">
+        <div class="row">
+            <div class="about-col">
+                <h1>We specialize in Event Contorl and agency services</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Aliquam illo consectetur eaque, magni, praesentium, doloremque temporibus at vi</p>
+                <a href="" class="hero-btn red-btn"><u>EXPLORE NOW</u></a>
+            </div>
+            <div class="about-col">
+                <img src="image/team.jpg">
+
+            </div>
+        </div>
+      </section> -->
+
+    
+
+
+       <!--footer---->
+       <section class="footer">
+        <h4><u>Follow Us</u></h4>
+        <p>Follow us on all our social media platforms to stay updated on our latest projects.</p>
+        <div class="icons">
+            <a href=""><i class="fa-brands  fa-facebook " ></i></a>
+            <a href=""><i class="fa-brands  fa-instagram"></i></a>
+            <a href=""><i class="fa-brands  fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands  fa-youtube"></i></a>
+            
+        </div>
+        <div class="footerNav">
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footerbottom">
+            <p>| Copyright &copy;2025 Omer Connect Limited <a href="" class="privacy">| Privacy Policy</a></p>
+        </div>
+       </section>
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- javascript fot toggle menue -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+            
+        }
+    </script>
+</body>
+</html>
