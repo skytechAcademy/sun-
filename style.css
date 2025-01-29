@@ -195,7 +195,7 @@ h3 {
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
-    color: white;
+    color: yellow;
 }
 
 .mission-col:hover {
@@ -230,6 +230,10 @@ h3 {
 .why-col img {
     width: 100%;
     display: block;
+}
+
+.why-col h3{
+    color: #ffa;
 }
 
 .layer {
@@ -575,10 +579,10 @@ h3 {
 
 
 .about-us {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    margin:  0 auto;
     padding: 80px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     text-align: initial;
     font-size: medium;
 }
@@ -586,7 +590,9 @@ h3 {
 .about-col {
     flex-basis: 48%;
     padding: 30px 2px;
-}
+   
+
+} 
 
 
 .about-col2 {
@@ -610,6 +616,7 @@ h3 {
 
 .about-col img {
     width: 100%;
+    height: 400px;
     /* align-items: center; */
     /* border-radius: 100%; */
     
@@ -619,6 +626,7 @@ h3 {
 .about-col2 img {
     width: 100%;
     border-radius: 10%;
+    height: 300;
 }
 
 .about-col3 img {
@@ -637,7 +645,7 @@ h3 {
 }
 
 .about-col p {
-    padding: 18px 0 25px;
+    padding: 18px 0;
     color: black;
     text-align: initial;
     /* padding-left: 10px; */
@@ -664,11 +672,18 @@ h3 {
 
 @media (max-width: 700px){
     .about-us p{
-    text-align: initial;
-   position: relative;
-   /* padding: 18px 0; */
-
+    text-align: left;
+    padding: 0;
     }
+
+    .about-us{
+        padding: 0;
+    }
+
+    .about-col p{
+        text-align: justify;
+    }
+  
 }
 
 /* ......service page... */
