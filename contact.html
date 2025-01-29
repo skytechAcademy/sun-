@@ -72,14 +72,14 @@
             <div class="contact-col"></div>
             <h6>Reach out to us by filling the form...></h6>
             <br>
-            <form action="">
-                <input type="text" placeholder="Enter Your Name" required><br>
+            <form action="from-hndler.php" method="post">
+                <input type="text" name="name" placeholder="Enter Your Name" required><br>
                 <br>
-                <input type="email" placeholder="Enter Your Email address" required><br>
+                <input type="email" name="email"  placeholder="Enter Your Email address" required><br>
                 <br>
-                <input type="text" placeholder="Enter Your Request" required><br>
+                <input type="text"   name="subject" placeholder="Enter Your Request" required><br>
                 <br>
-                <textarea rows="8" placeholder="Message" required></textarea>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
                 <button type="submit" class="hero-btn"><u>Submit</u></button>
             </form>
         </div>
