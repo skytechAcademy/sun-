@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 $name = $_POST['name']
 $visitor_email = $_POST['email']
@@ -8,4 +8,4 @@ $messsage = $_POST['message']
 
 $email_from = 'omergroup@uk.com';
 
-?>
+?> 
