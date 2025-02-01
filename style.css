@@ -386,7 +386,7 @@ h3 {
 
 .cta1 {
     margin: 30px auto;
-    width: 75%;
+    width: 65%;
     background-image: url(image/cat1.png);
     background-position: center;
     background-size: cover;
@@ -397,7 +397,7 @@ h3 {
 }
 .cta2 {
     margin: 30px auto;
-    width: 80%;
+    width: 65%;
     background-image: url(image/cat2.png);
     background-position: center;
     background-size: cover;
@@ -409,7 +409,7 @@ h3 {
 
 .cta3 {
     margin: 30px auto;
-    width: 80%;
+    width: 65%;
     background-image: url(image/cat3.png);
     background-position: center;
     background-size: cover;
@@ -421,7 +421,7 @@ h3 {
 
 .cta4 {
     margin: 30px auto;
-    width: 80%;
+    width: 65%;
     background-image: url(image/cat4.png);
     background-position: center;
     background-size: cover;
