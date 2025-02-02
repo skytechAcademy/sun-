@@ -222,6 +222,11 @@ h3 {
     margin: auto;
     text-align: center;
     padding-top: 50px;
+    color: black;
+}
+
+.why-col h3{
+    color:#550803
 }
 
 .why h1{
@@ -242,9 +247,9 @@ h3 {
    
 }
 
-.why-col h3{
-    color: #ffa;
-}
+/* .why-col h3{
+    color: #ffa; 
+}  */
 
 .layer {
     background: transparent;
@@ -264,7 +269,7 @@ h3 {
 .layer h3 {
     width: 100%;
     font-weight: 500;
-    color: #fff;
+    color: rgb(243, 229, 229);
     font-size: 19px;
     bottom: 0;
     left: 50%;
@@ -356,6 +361,10 @@ h3 {
     text-align: left;
 }
 
+.testimonials-col h6{
+    color: yellow;
+}
+
 .testimonials-col .fa {
     color: white;
 }
@@ -373,8 +382,8 @@ h3 {
 
 .cta {
     margin: 30px auto;
-    width: 80%;
-    background-image: url(image/reach.png);
+    width: 85%;
+    background-image: url(image/pro3.png);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -386,53 +395,53 @@ h3 {
 
 .cta1 {
     margin: 30px auto;
-    width: 65%;
-    background-image: url(image/cat1.png);
+    width: 80%;
+    background-image: url(image/riskk.png);
     background-position: center;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 5%;
     text-align: center;
     padding: 100px 0;
-    height: 350px;
+    height: 300px;
 }
 .cta2 {
     margin: 30px auto;
-    width: 65%;
-    background-image: url(image/cat2.png);
+    width: 80%;
+    background-image: url(image/cat22.png);
     background-position: center;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 5%;
     text-align: center;
     padding: 100px 0;
-    height: 370px;
+    height: 300px;
 }
 
 .cta3 {
     margin: 30px auto;
-    width: 65%;
-    background-image: url(image/cat3.png);
+    width: 80%;
+    background-image: url(image/pro4.jpg);
     background-position: center;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 5%;
     text-align: center;
     padding: 100px 0;
-    height: 370px;
+    height: 300px;
 }
 
 .cta4 {
     margin: 30px auto;
-    width: 65%;
-    background-image: url(image/cat4.png);
+    width: 80%;
+    background-image: url(image/em\ service.png);
     background-position: center;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 5%;
     text-align: center;
     padding: 100px 0;
-    height: 370px;
+    height: 300px;
 }
 
 .cta h1 {
-    color: #ffa;
+    color: white;
     margin-bottom: 40px;
     padding: 0;
 }
@@ -441,6 +450,15 @@ h3 {
     .cta p {
         font-size: 100px;
     }
+
+    .cat {
+        background-image: url(image/reach2.png);
+        /* background-size: cover; */
+        height: 300px;
+       
+
+    }
+ 
    
 }
 
@@ -594,6 +612,9 @@ h3 {
     padding-bottom: 20px;
     text-align: initial;
     font-size: medium;
+    background-color: rgb(34, 18, 34);
+    color: white;
+    
 }
 
 .about-col {
@@ -659,9 +680,10 @@ h3 {
 
 .about-col p {
     padding: 18px 0;
-    color: black;
+    color: white;
     text-align: justify;
     font-size: small;
+    /* width: 20%; */
     /* padding-left: 10px; */
 }
 
@@ -681,6 +703,8 @@ h3 {
     font-size: 10px;
     justify-content: center;
     /* text-align: initial; */
+    background-color: rgb(30, 44, 44);
+    text-align: center;
 }
 
 
@@ -696,6 +720,7 @@ h3 {
 
     .about-col p{
         text-align: justify;
+        /* font-size: larger; */
     }
   
 }
@@ -710,14 +735,25 @@ h3 {
     background-position: center;
     background-size: cover;
     text-align: center;
+
     
 
 }
 
 .servicetab p{
-    color: black;
+    color: white;
     text-align: justify;
-    font-size: small;
+    font-size: large;
+}
+.servicetab h1{
+    color: white;
+}
+
+@media (max-width: 700px){
+    .servicetab p{
+        font-size: small;
+        text-align: justify;
+    }
 }
 
 
