@@ -125,7 +125,7 @@ nav .fa {
     }
     .nav-links {
         position: fixed;
-        background: rgb(139, 107, 139);
+        background: rgb(8, 8, 8);
         display: hidden;
         height: 100vh;
         width: 200px;
