@@ -20,10 +20,10 @@
 
     <section class="subheader1">
         <nav>
-            <!-- <label class="logo">Omer  Group</label> -->
-            <a href="index.html"><img src="image/Omer Group101.png"></a>
+            <label class="logo">Omer  Group</label>
+            <!-- <a href="index.html"><img src="image/Omer Group101.png"></a> -->
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <i class="fa fa-times" aria-label="Close menu" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -32,7 +32,7 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i class="fa fa-bars" aria-label="Open menu" onclick="showMenu()"></i>
         </nav>
     </section> 
     <br>
@@ -126,10 +126,10 @@
         <h4><u>Follow Us</u></h4>
         <p>Follow us on all our social media platforms to stay updated on our latest projects.</p>
         <div class="icons">
-            <a href="contact.html"><i class="fa-brands  fa-facebook " ></i></a>
-            <a href="contact.html"><i class="fa-brands  fa-instagram"></i></a>
-            <a href="contact.html"><i class="fa-brands  fa-linkedin"></i></a>
-            <a href="contact.html"><i class="fa-brands  fa-youtube"></i></a>
+            <a href="contact.html" aria-label="Facebook"><i class="fa-brands  fa-facebook " ></i></a>
+            <a href="contact.html" aria-label="instagram"><i class="fa-brands  fa-instagram"></i></a>
+            <a href="contact.html" aria-label="linkedin"><i class="fa-brands  fa-linkedin"></i></a>
+            <a href="contact.html" aria-label="youtube"><i class="fa-brands  fa-youtube"></i></a>
             
         </div>
         <div class="footerNav">
@@ -161,6 +161,23 @@
     navLinks.style.right = "-200px"
     
      }
+
+
+     function speakText(text) {
+            var speech = new SpeechSynthesisUtterance(text);
+            speech.lang = "en-US";
+            window.speechSynthesis.speak(speech);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll("h1, h3, p, a");
+            elements.forEach(el => {
+                el.addEventListener("focus", function() {
+                    speakText(this.innerText);
+                });
+            });
+        });
+
     </script>
 
  

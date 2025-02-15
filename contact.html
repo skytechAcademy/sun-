@@ -20,8 +20,8 @@
 
     <section class="contact-us">
         <nav>
-            <!-- <label class="logo">Omer Group</label> -->
-            <a href="index.html"><img src="image/Omer Group101.png"></a>
+            <label class="logo">Omer Group</label>
+            <!-- <a href="index.html"><img src="image/Omer Group101.png"></a> -->
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
@@ -66,8 +66,9 @@
                 <div>
                     <i class="fa fa-envelope"></i>
                     <span>
-                        <h6>info@omergroupuk.com</h6>
-                        <p>email us</p>
+                        <h5>Email us</h5>
+                        <p><a href="mailto:info@omergroupuk.com">info@omergroupuk.com</a></p>
+                        <!-- <p><hre email us</p> -->
                     </span>
                 </div>
             </div>
@@ -96,10 +97,10 @@
         <h4><u>Follow Us</u></h4>
         <p>Follow us on all our social media platforms to stay updated on our latest projects.</p>
         <div class="icons">
-            <a href="contact.html"><i class="fa-brands  fa-facebook " ></i></a>
-            <a href="contact.html"><i class="fa-brands  fa-instagram"></i></a>
-            <a href="contact.html"><i class="fa-brands  fa-linkedin"></i></a>
-            <a href="contact.html"><i class="fa-brands  fa-youtube"></i></a>
+            <a href="contact.html" aria-label="Facebook"><i class="fa-brands  fa-facebook " ></i></a>
+            <a href="contact.html" aria-label="instagram"><i class="fa-brands  fa-instagram"></i></a>
+            <a href="contact.html" aria-label="linkedin"><i class="fa-brands  fa-linkedin"></i></a>
+            <a href="contact.html" aria-label="youtube"><i class="fa-brands  fa-youtube"></i></a>
             
         </div>
         <div class="footerNav">
@@ -143,6 +144,21 @@
             navLinks.style.right = "-200px"
             
         }
+
+        function speakText(text) {
+            var speech = new SpeechSynthesisUtterance(text);
+            speech.lang = "en-US";
+            window.speechSynthesis.speak(speech);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll("h1, h3, p, a, label, button");
+            elements.forEach(el => {
+                el.addEventListener("focus", function() {
+                    speakText(this.innerText);
+                });
+            });
+        });
     </script>
 </body>
 </html>

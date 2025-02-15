@@ -5,22 +5,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Omer  Group</title>
+    
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="font-6/css/all.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,600&display=swap" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 
 <body>
     <section class="header">
         <nav>
-            <!-- <label class="logo">Omer   Group</label> -->
-             <a href="index.html"><img src="image/Omer Group101.png"></a>
+            <label class="logo">Omer   Group</label>
+            
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <i class="fa fa-times" onclick="hideMenu()" aria-label="Close menu"></i>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -29,7 +30,7 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i class="fa fa-bars" onclick="showMenu()" aria-label="Open menu"></i>
         </nav>
         <br />
         <br />
@@ -47,7 +48,7 @@
             <br>
             <br>
 
-            <a href="about.html" class="hero-btn">Visit us to know more</a>
+            <a href="about.html" class="hero-btn" aria-label="Visit us to know more">Visit us to know more</a>
         </div>
     </section>
 
@@ -93,13 +94,13 @@
 
         <div class="row">
             <div class="why-col">
-                <img src="image/sol2.png" />
+                <img src="image/sol2.png" alt="Team managing a large crowd at an event" />
                 <div class="layer">
                     <h3>Proven Track Record & Highly Exprienced Team</h3>
                 </div>
             </div>
             <div class="why-col">
-                <img src="image/r1.png.jpg" />
+                <img src="image/r1.png.jpg" alt="Customer service representative helping a client" />
                 <div class="layer">
                     <h3>
                         Customized Solution Tailored To Your Agency Needs & Commitment To Exceptional Customer Service
@@ -107,7 +108,7 @@
                 </div>
             </div>
             <div class="why-col">
-                <img src="image/c service.png.webp" />
+                <img src="image/c service.png.webp" alt="Smiling customer service agent on a call" />
                 <div class="layer">
                     <h3>Exceptional client service with a collaborative, customer-first approach.</h3>
                 </div>
@@ -266,7 +267,7 @@
         <br>
         <br>
         <br>
-        <a href="contact.html" class="hero-btn">CONTACT US</a>
+        <a href="contact.html" class="hero-btn" aria-label="Contact us">CONTACT US</a>
     </section>
     <br>
     <br>
@@ -276,10 +277,10 @@
         <h4><u>Follow Us</u></h4>
         <p>Follow us on all our social media platforms to stay updated on our latest projects.</p>
         <div class="icons">
-            <a href="contact.html"><i class="fa-brands fa-facebook"></i></a>
-            <a href="contact.html"><i class="fa-brands fa-instagram"></i></a>
-            <a href="contact.html"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="contact.html"><i class="fa-brands fa-youtube"></i></a>
+            <a href="contact.html" aria-label="Follow us on Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="contact.html" aria-label="Follow us on instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="contact.html" aria-label="Follow us on linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="contact.html" aria-label="Follow us on youtube"><i class="fa-brands fa-youtube"></i></a>
         </div>
         <div class="footerNav">
             <ul>
@@ -310,7 +311,25 @@
         function hideMenu() {
             navLinks.style.right = "-200px";
         }
+
+         // Text-to-Speech Functionality for Visually Impaired Users
+         function speakText(text) {
+            var speech = new SpeechSynthesisUtterance(text);
+            speech.lang = "en-US";
+            window.speechSynthesis.speak(speech);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll("h1, h3, p, a");
+            elements.forEach(el => {
+                el.addEventListener("focus", function() {
+                    speakText(this.innerText);
+                });
+            });
+        });
+    </script>
+
     </script>
 </body>
 
-</html>
+</html> 
