@@ -8,7 +8,7 @@
 .header {
     min-height: 100vh;
     width: 100vw;
-    background-image: url(image/com1\ page-min.png);
+    background-image: url(image/com1\ page-min-min.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -412,7 +412,7 @@ h3 {
 .cta2 {
     margin: 30px auto;
     width: 80%;
-    background-image: url(image/cam\ v1.jpg);
+    background-image: url(image/cam\ view.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 5%;
@@ -436,7 +436,7 @@ h3 {
 .cta4 {
     margin: 30px auto;
     width: 80%;
-    background-image: url(image/em\ service.png);
+    background-image: url(image/em\ service-min.png);
     background-position: center;
     background-size: cover;
     border-radius: 5%;
