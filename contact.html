@@ -76,14 +76,16 @@
             <div class="contact-col"></div>
             <h6>Reach out to us by filling the form...></h6>
             <br>
-            <form action="from-handler.php" method="post">
+            <form action="https://formsubmit.co/info@omergroupuk.com" method="POST">
                 <input type="text" name="name" placeholder="Enter Your Name" required><br>
                 <br>
                 <input type="email" name="email"  placeholder="Enter Your Email address" required><br>
                 <br>
                 <input type="text"   name="subject" placeholder="Enter Subject" required><br>
                 <br>
-                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <textarea rows="8" name="Message" placeholder="Message" required></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
                 <button type="submit" class="hero-btn"><u>Send Message</u></button>
                 <!-- <p><a href="mailto:info@omergroupuk.com">Send Message</a></p> -->
             </form>
